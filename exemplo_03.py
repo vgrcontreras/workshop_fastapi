@@ -8,3 +8,8 @@ app = FastAPI()
 @app.get("/")
 def read_root():
     return {"Hello": "World"}
+
+
+@app.get('/outro_recurso')
+def read_root():
+    return {'outro': 'recurso'}
