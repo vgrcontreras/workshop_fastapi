@@ -11,5 +11,10 @@ def read_root():
 
 
 @app.get('/outro_recurso')
-def read_root():
+def pegar_recurso():
     return {'outro': 'recurso'}
+
+
+@app.post('/outro_recurso/{id}')
+def criar_recurso():
+    return {"message": id}
